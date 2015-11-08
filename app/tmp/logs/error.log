@@ -1,94 +1,20 @@
-2015-11-06 10:35:02 Error: Testing LogError() basic function
-2015-11-06 10:35:02 Error: Testing with multi-line string
-2015-11-06 11:22:34 Error: [UnexpectedValueException] Referenced fixture class Note (Test\Fixture\NoteFixture.php) not found
-Stack Trace:
-#0 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(77): CakeFixtureManager->_loadFixtures(Array)
-#1 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\CakeTestRunner.php(57): CakeFixtureManager->fixturize(Object(TaskTest))
-#2 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\CakeTestSuiteCommand.php(98): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
-#3 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(259): CakeTestSuiteCommand->run(Array)
-#4 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
-#5 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
-#6 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\app\webroot\test.php(105): CakeTestSuiteDispatcher::run()
-#7 {main}
-2015-11-06 12:02:40 Error: [MissingActionException] Action AppController::Controller() could not be found.
+2015-11-08 15:56:00 Error: [MissingTableException] Table notes for model Model was not found in datasource default.
 Exception Attributes: array (
-  'controller' => 'AppController',
-  'action' => 'Controller',
+  'table' => 'notes',
+  'class' => 'Model',
+  'ds' => 'default',
 )
-Request URL: /CakePHP-test/app/Controller/TasksController.php
 Stack Trace:
-#0 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
-#1 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
-#2 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2015-11-06 12:35:52 Error: Fatal Error (1): Class 'PHPUnit_Util_Diff' not found in [C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\Reporter\CakeHtmlReporter.php, line 268]
-2015-11-06 12:35:52 Error: [FatalErrorException] Class 'PHPUnit_Util_Diff' not found
-Stack Trace:
-#0 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'PHPUnit_...', 'C:\Users\agekke...', 268)
-#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PHPUnit_...', 'C:\Users\agekke...', 268, Array)
-#2 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Class 'PHPUnit_...', 'C:\Users\agekke...', 268, Array)
-#3 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Core\App.php(906): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2015-11-06 12:53:04 Error: Fatal Error (1): Class 'PHPUnit_Util_Diff' not found in [C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\Reporter\CakeHtmlReporter.php, line 268]
-2015-11-06 12:53:04 Error: [FatalErrorException] Class 'PHPUnit_Util_Diff' not found
-Stack Trace:
-#0 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'PHPUnit_...', 'C:\Users\agekke...', 268)
-#1 [internal function]: ErrorHandler::handleError(1, 'Class 'PHPUnit_...', 'C:\Users\agekke...', 268, Array)
-#2 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Class 'PHPUnit_...', 'C:\Users\agekke...', 268, Array)
-#3 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Core\App.php(906): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2015-11-06 13:30:10 Error: [UnexpectedValueException] Referenced fixture class Tasks (Test\Fixture\TasksFixture.php) not found
-Stack Trace:
-#0 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(77): CakeFixtureManager->_loadFixtures(Array)
-#1 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\CakeTestRunner.php(57): CakeFixtureManager->fixturize(Object(TopicsControllerTest))
-#2 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\CakeTestSuiteCommand.php(98): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
-#3 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(259): CakeTestSuiteCommand->run(Array)
-#4 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
-#5 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
-#6 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\app\webroot\test.php(105): CakeTestSuiteDispatcher::run()
-#7 {main}
-2015-11-06 13:31:43 Error: Fatal Error (1): Class 'AppController' not found in [C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\app\Controller\TasksController.php, line 3]
-2015-11-06 13:31:43 Error: [FatalErrorException] Class 'AppController' not found
-Request URL: /CakePHP-test/tasks/index
-Stack Trace:
-#0 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'AppContr...', 'C:\Users\agekke...', 3)
-#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppContr...', 'C:\Users\agekke...', 3, Array)
-#2 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Class 'AppContr...', 'C:\Users\agekke...', 3, Array)
-#3 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Core\App.php(906): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2015-11-06 13:36:24 Error: [MissingActionException] Action AppController::Controller() could not be found.
-Exception Attributes: array (
-  'controller' => 'AppController',
-  'action' => 'Controller',
-)
-Request URL: /CakePHP-test/app/Controller/TasksController.php
-Stack Trace:
-#0 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
-#1 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
-#2 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2015-11-06 13:42:51 Error: [MissingActionException] Action AppController::Controller() could not be found.
-Exception Attributes: array (
-  'controller' => 'AppController',
-  'action' => 'Controller',
-)
-Request URL: /CakePHP-test/app/Controller/TasksController.php
-Stack Trace:
-#0 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
-#1 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
-#2 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2015-11-06 13:46:06 Error: [MissingActionException] Action AppController::Controller() could not be found.
-Exception Attributes: array (
-  'controller' => 'AppController',
-  'action' => 'Controller',
-)
-Request URL: /CakePHP-test/app/Controller/TasksController.php
-Stack Trace:
-#0 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
-#1 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
-#2 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
+#0 C:\pleiades-e4.2-php-jre_20130303\xampp\htdocs\CakePHP-test\lib\Cake\Model\Model.php(3653): Model->setSource('notes')
+#1 C:\pleiades-e4.2-php-jre_20130303\xampp\htdocs\CakePHP-test\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#2 C:\pleiades-e4.2-php-jre_20130303\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\Fixture\CakeTestFixture.php(162): Model->schema(true)
+#3 C:\pleiades-e4.2-php-jre_20130303\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\Fixture\CakeTestFixture.php(120): CakeTestFixture->init()
+#4 C:\pleiades-e4.2-php-jre_20130303\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(163): CakeTestFixture->__construct()
+#5 C:\pleiades-e4.2-php-jre_20130303\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(77): CakeFixtureManager->_loadFixtures(Array)
+#6 C:\pleiades-e4.2-php-jre_20130303\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\CakeTestRunner.php(57): CakeFixtureManager->fixturize(Object(TasksControllerTest))
+#7 C:\pleiades-e4.2-php-jre_20130303\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\CakeTestSuiteCommand.php(98): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#8 C:\pleiades-e4.2-php-jre_20130303\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(259): CakeTestSuiteCommand->run(Array)
+#9 C:\pleiades-e4.2-php-jre_20130303\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#10 C:\pleiades-e4.2-php-jre_20130303\xampp\htdocs\CakePHP-test\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#11 C:\pleiades-e4.2-php-jre_20130303\xampp\htdocs\CakePHP-test\app\webroot\test.php(105): CakeTestSuiteDispatcher::run()
+#12 {main}
