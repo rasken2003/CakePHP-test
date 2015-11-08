@@ -36,4 +36,10 @@ class TasksControllerTest extends ControllerTestCase {
 		$this->testAction('/Tasks/edit/999', array('method' => 'get'));
 		$this->assertRegExp('/Tasks\/index$/', $this->headers['Location']);
 	}
+
+	public function test新しいタスクを追加する() {
+		$data = array('name' => 'タスク999', 'body' => 'タスク999です。');
+		$this->testAction('Tasks/create', array('data' => $data, 'method' => 'post'));
+		$this->assertContains('タスク 8 を登録しました。', $this->controller->Session->read('Message.flash'));
+	}
 }
