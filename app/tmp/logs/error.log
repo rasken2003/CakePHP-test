@@ -1,0 +1,94 @@
+2015-11-02 13:13:11 Error: [MissingActionException] Action AppController::Controller() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'Controller',
+)
+Request URL: /CakePHP-test/app/Controller/TasksController.php
+Stack Trace:
+#0 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-02 13:13:28 Error: [MissingActionException] Action TasksController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'TasksController',
+  'action' => 'index',
+)
+Request URL: /CakePHP-test/Tasks
+Stack Trace:
+#0 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#2 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-02 13:13:44 Error: [MissingActionException] Action TasksController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'TasksController',
+  'action' => 'index',
+)
+Request URL: /CakePHP-test/Tasks/
+Stack Trace:
+#0 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#2 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-02 13:13:52 Error: [MissingActionException] Action TasksController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'TasksController',
+  'action' => 'index',
+)
+Request URL: /CakePHP-test/Tasks/index
+Stack Trace:
+#0 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#2 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-02 13:37:29 Error: [MissingViewException] View file "Tasks\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Tasks\\index.ctp',
+)
+Request URL: /CakePHP-test/Tasks
+Stack Trace:
+#0 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\View\View.php(470): View->_getViewFileName('index')
+#1 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Controller\Controller.php(960): View->render('index', NULL)
+#2 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\app\Controller\TasksController.php(15): Controller->render('index')
+#3 [internal function]: TasksController->index()
+#4 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#5 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#7 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-02 14:12:06 Error: Fatal Error (1): Call to undefined function springf() in [C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\app\Controller\TasksController.php, line 22]
+2015-11-02 14:12:06 Error: [FatalErrorException] Call to undefined function springf()
+Request URL: /CakePHP-test/Tasks/done/1
+Stack Trace:
+#0 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\agekke...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\agekke...', 22, Array)
+#2 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\agekke...', 22, Array)
+#3 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 14:37:09 Error: [MissingActionException] Action TasksController::create method=() could not be found.
+Exception Attributes: array (
+  'controller' => 'TasksController',
+  'action' => 'create method=',
+)
+Request URL: /CakePHP-test/Tasks/create%20method=?name=%E3%82%BF%E3%82%B9%E3%82%AF22
+Stack Trace:
+#0 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Controller\Scaffold.php(150): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(TasksController), Object(CakeRequest))
+#2 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#5 C:\Users\agekke\Desktop\Hide'sapp\pleiades\xampp\htdocs\CakePHP-test\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-11-03 11:30:39 Error: [MissingActionException] Action AppController::Controller() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'Controller',
+)
+Request URL: /CakePHP-test/app/Controller/TasksController.php
+Stack Trace:
+#0 C:\pleiades-e4.2-php-jre_20130303\xampp\htdocs\CakePHP-test\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\pleiades-e4.2-php-jre_20130303\xampp\htdocs\CakePHP-test\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 C:\pleiades-e4.2-php-jre_20130303\xampp\htdocs\CakePHP-test\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
