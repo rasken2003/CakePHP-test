@@ -32,9 +32,16 @@ class TasksController extends AppController {
 
 		// POSTされた場合だけ処理を行う
 		if ($this->request->is('post')) {
-			$data = array('name' => $this->request->data['name']);
+			$data = array(
+					'name' => $this->request->data['name'],
+					'body' => $this->request->data['body'],
+			);
 			// データを登録
 			$id = $this->Task->save($data);
+			if ($id === false) {
+				$this->render('create');
+				return;
+			}
 			$msg = sprintf('タスク %s を登録しました。', $this->Task->id);
 
 			// メッセージを表示してリダイレクト
@@ -43,5 +50,41 @@ class TasksController extends AppController {
 			return;
 		}
 		$this->render('create');
+	}
+
+	public function edit() {
+
+		// 指定されたタスクのデータを取得
+		$id = $this->request->pass[0];
+		$options = array(
+				'conditions' => array(
+					'Task.id' => $id,
+					'Task.status' => 0
+				)
+		);
+		$task = $this->Task->find('first', $options);
+
+		// データが見つからない場合は一覧へ
+		if ($task == false) {
+			$this->Session->setFlash('タスクが見つかりません');
+			$this->redirect('/Tasks/index');
+		}
+
+		// フォームが送信された場合は更新にトライ
+		if ($this->request->is('post')) {
+			$data = array(
+					'id' => $id,
+					'name' => $this->request->data['Task']['name'],
+					'body' => $this->request->data['Task']['body']
+			);
+			if ($this->Task->save($data)) {
+				$this->Session->setFlash('更新しました');
+				$this->redirect('/Tasks/index');
+			}
+		} else {
+
+			// POSTされていない場合は初期データをフォームにセット
+			$this->request->data = $task;
+		}
 	}
 }
