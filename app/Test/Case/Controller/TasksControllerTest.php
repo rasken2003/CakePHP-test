@@ -11,7 +11,7 @@ class TasksControllerTest extends ControllerTestCase {
 	);
 
 	public function testタスクを一覧表示できる() {
-		$result = $this->testAction('/tasks/index', array('return' => 'vars'));
+		$result = $this->testAction('/Tasks/index', array('return' => 'vars'));
 		$tasks_data = $result['tasks_data'];
 		$this->assertCount(7, $tasks_data);
 		$this->assertEquals('タスク1', $tasks_data[0]['Task']['name']);
@@ -24,11 +24,16 @@ class TasksControllerTest extends ControllerTestCase {
 	}
 
 	public function testタスク一覧はディブタグで表示する() {
-		$result = $this->testAction('/tasks/index', array('return' => 'view'));
+		$result = $this->testAction('/Tasks/index', array('return' => 'view'));
 		$expected = array(
 				'tag' => 'div',
 				'attributes' => array('class' => 'roundBox')
 		);
 		$this->assertTag($expected, $result);
+	}
+
+	public function testデータが見つからない場合は一覧へ() {
+		$this->testAction('/Tasks/edit/999', array('method' => 'get'));
+		$this->assertRegExp('/Tasks\/index$/', $this->headers['Location']);
 	}
 }
